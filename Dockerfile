@@ -39,3 +39,6 @@ RUN apt-get update && apt-get install -y \
     rm -rf /usr/share/info/* && \
     rm -rf /tmp/* && \
     rm -rf /var/tmp/*
+
+RUN mkdir -p /mydumper
+WORKDIR /mydumper
